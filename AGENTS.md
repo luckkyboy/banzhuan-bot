@@ -119,6 +119,35 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 - `credentials.json`, `secrets.json`
 - `.secrets/`, `secrets/`, `private/`
 
+## 多用户隔离
+
+### Session 隔离（已启用）
+
+当前配置 `session.dmScope: "per-channel-peer"`，不同用户的会话上下文独立：
+- 每个用户的对话历史不互通
+- Session key: `agent:main:wecom:dm:<senderId>`
+
+### Workspace 隔离（可选）
+
+如需完全隔离记忆文件，可为不同用户配置独立 workspace：
+1. 创建多个 agent，每个 agent 有独立 workspace
+2. 配置 bindings 将不同 chat_id 路由到对应 agent
+
+配置示例：
+```json5
+{
+  agents: {
+    list: [
+      { id: "main", workspace: "~/.openclaw/workspace" },
+      { id: "user-alice", workspace: "~/.openclaw/workspace-alice" },
+    ]
+  },
+  bindings: [
+    { match: { channel: "wecom", peer: { kind: "dm", id: "Alice" } }, agentId: "user-alice" },
+  ]
+}
+```
+
 ## External vs Internal
 
 **Safe to do freely:**
