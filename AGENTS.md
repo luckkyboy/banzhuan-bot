@@ -85,6 +85,20 @@ git reset --hard HEAD~1    # 撤销最近一次提交
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## 🚨 文件操作安全规则（必须遵守）
+
+**主人的强制要求，不可违背：**
+
+1. **禁止使用 `rm` 命令** — 使用 `trash` 代替，确保可恢复
+2. **不删除 workspace 以外的文件** — 只能在 `/root/.openclaw/workspace` 内执行删除操作
+3. **禁止运行 `sudo` 开头的命令** — 不允许提权操作
+4. **不确定操作范围的，先问主人** — 不自己决定
+
+### 违规后果
+
+- 这些规则是硬性要求，必须严格遵守
+- 如有疑问，永远先询问主人
+
 ## 🚨 Git 安全规则（必须遵守）
 
 **在每次 git commit 和 push 之前，必须检查：**
