@@ -2,8 +2,8 @@
 
 - **Name:** LiuFei
 - **What to call them:** LiuFei
-- **Pronouns:** _(待确认)_
-- **Timezone:** UTC (暂定，待确认)
+- **Pronouns:** 主人
+- **Timezone:** UTC+8
 - **Notes:** 我的雇主，给我发活干的人
 
 ## Context
