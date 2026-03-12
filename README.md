@@ -132,9 +132,17 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 
 ## 📝 更新日志
 
-- **2026-03-12**: 初始化 workspace，配置 Git 自动提交和远程推送
-- **2026-03-12**: 添加安全规则和 .gitignore
-- **2026-03-12**: 配置 Session 隔离（dmScope: per-channel-peer）
+### 2026-03-12
+- **初始化 workspace**，配置 Git 自动提交和远程推送
+- **添加安全规则和 .gitignore**，禁止提交敏感文件
+- **配置 Session 隔离**（dmScope: per-channel-peer）
+- **添加 README.md** 详细说明各文件作用
+- **更新用户偏好设置**：Pronouns: 主人，Timezone: UTC+8
+- **更新称呼**：README.md 中改为"主人"
+- **添加文件操作安全规则**：禁止 rm、禁止删除 workspace 以外文件、禁止 sudo
+- **优化 AGENTS.md**：简化结构，更新记忆规则（索引层/项目层/教训层/日志层）
+- **优化 HEARTBEAT.md**：添加记忆维护任务（每周一次）
+- **创建 heartbeat-state.json**：心跳状态追踪
 
 ---
 
