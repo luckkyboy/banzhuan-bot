@@ -85,6 +85,40 @@ git reset --hard HEAD~1    # 撤销最近一次提交
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
 
+## 🚨 Git 安全规则（必须遵守）
+
+**在每次 git commit 和 push 之前，必须检查：**
+
+### 禁止提交的内容
+
+1. **API Key** — 任何形式的 API 密钥、token
+2. **密码** — 明文密码、密码哈希、密码提示
+3. **私钥** — SSH 私钥、SSL 证书、加密密钥
+4. **凭证文件** — `.env`、`credentials.json`、`secrets.json` 等
+5. **敏感配置** — 包含真实密码/IP 的配置文件
+6. **个人隐私** — 身份证、电话、地址等 PII
+
+### 检查命令
+
+```bash
+# 提交前运行
+git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key)'
+```
+
+### 如果发现敏感信息
+
+1. **立即停止** — 不要 push
+2. **从历史中清除** — 使用 `git filter-branch` 或 BFG
+3. **更换凭证** — 泄露的密钥必须作废
+4. **报告用户** — 告知发生了什么
+
+### .gitignore 已配置
+
+以下文件类型已被自动忽略：
+- `*.env`, `*.pem`, `*.key`
+- `credentials.json`, `secrets.json`
+- `.secrets/`, `secrets/`, `private/`
+
 ## External vs Internal
 
 **Safe to do freely:**
