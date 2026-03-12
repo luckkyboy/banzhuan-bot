@@ -1,5 +1,12 @@
 # HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+# 自动任务检查列表
 
-# Add tasks below when you want the agent to check something periodically.
+## 1. Git 自动提交
+如果有未提交的变更，自动提交并推送到远程（如果配置了的话）：
+- 检查 `git status` 是否有变更
+- 有变更则提交，commit message 简要描述变更内容
+- 如果有 remote，尝试 push
+
+## 2. 其他定期任务
+_(待添加)_

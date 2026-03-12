@@ -45,6 +45,36 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - When you make a mistake → document it so future-you doesn't repeat it
 - **Text > Brain** 📝
 
+## Git Version Control
+
+记忆文件使用 git 进行版本控制，支持回滚。
+
+### 自动提交时机
+
+1. **重大变更后立即提交** — 修改 IDENTITY.md、USER.md、MEMORY.md 等核心文件后
+2. **Heartbeat 时检查提交** — 如果有未提交的变更，自动提交
+3. **会话有意义结束时提交** — 比如完成了一个重要任务
+
+### 提交命令
+
+```bash
+git add -A && git commit -m "描述变更内容"
+```
+
+### 如果配置了远程仓库
+
+```bash
+git push
+```
+
+### 常用恢复命令
+
+```bash
+git log --oneline          # 查看历史
+git checkout <commit>      # 恢复到某个版本
+git reset --hard HEAD~1    # 撤销最近一次提交
+```
+
 ## Red Lines
 
 - Don't exfiltrate private data. Ever.
