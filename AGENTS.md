@@ -61,10 +61,13 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 git add -A && git commit -m "描述变更内容"
 ```
 
-### 如果配置了远程仓库
+### 远程同步
 
+已配置远程仓库：`git@github.com:luckkyboy/banzhuan-bot.git`
+
+每次提交后自动推送：
 ```bash
-git push
+git add -A && git commit -m "描述" && git push
 ```
 
 ### 常用恢复命令
