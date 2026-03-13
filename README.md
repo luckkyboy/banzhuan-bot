@@ -133,6 +133,12 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 ## 📝 更新日志
 
 ### 2026-03-13
+- **🧠 建立自我进化系统**：
+  - 新增 `MEMORY.md` 核心索引和自我进化配置
+  - 新增 `memory/feedback.md` 反馈学习记录
+  - 新增 `memory/patterns.md` 行为模式库
+  - 更新 `HEARTBEAT.md` 加入每周自我反思任务
+  - 更新 `AGENTS.md` 说明四层记忆架构
 - **创建 60s-news skill**：获取每日60秒新闻简报，支持指定日期查询
 - **创建 weather-60s skill**：获取实时天气和生活建议，支持指定城市查询
 - **配置联网搜索**：启用 Gemini Search
