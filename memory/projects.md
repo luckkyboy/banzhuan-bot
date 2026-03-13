@@ -17,8 +17,16 @@
 - [x] 配置 Gemini 联网搜索
 - [x] 配置 Gemini 记忆向量搜索
 - [x] 建立安全规则（禁止 rm、sudo 等）
+- [x] 建立自我进化系统（反馈学习 + 模式提炼）
+- [x] 创建任务管理 skill（todo）
+- [x] 创建数据分析 skill（data-analysis）
+- [x] 创建文件格式转换 skill（file-convert）
+- [x] 创建自动化脚本 skill（automation）
+- [x] 创建通知提醒 skill（notification）
 
 **待办**:
-- [ ] 无
+- [ ] 对接日历服务
+- [ ] 对接教育资源平台
+- [ ] 实现邮件处理能力
 
-**最后更新**: 2026-03-12
+**最后更新**: 2026-03-13

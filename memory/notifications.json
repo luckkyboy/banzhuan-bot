@@ -1,0 +1,12 @@
+{
+  "pending": [],
+  "sent": [],
+  "settings": {
+    "quietHours": {
+      "start": "23:00",
+      "end": "07:00",
+      "timezone": "UTC+8"
+    }
+  },
+  "lastUpdated": "2026-03-13T09:40:00Z"
+}

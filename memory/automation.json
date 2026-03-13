@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "id": "daily-morning",
+      "name": "每日早报",
+      "description": "每天早上推送天气和新闻",
+      "schedule": "45 6 * * *",
+      "action": "skills.weather-60s",
+      "enabled": true,
+      "lastRun": null,
+      "nextRun": null
+    },
+    {
+      "id": "todo-check",
+      "name": "待办检查",
+      "description": "每小时检查待办事项，到期前提醒",
+      "trigger": "heartbeat",
+      "action": "check_todos",
+      "enabled": true,
+      "lastRun": null
+    },
+    {
+      "id": "git-backup",
+      "name": "Git 备份",
+      "description": "每小时检查 Git 变更并提交",
+      "trigger": "heartbeat",
+      "action": "git_commit_push",
+      "enabled": true,
+      "lastRun": null
+    },
+    {
+      "id": "self-evolution",
+      "name": "自我进化反思",
+      "description": "每周反思学习成果",
+      "schedule": "0 10 * * 0",
+      "action": "self_evolution",
+      "enabled": true,
+      "lastRun": null,
+      "nextRun": null
+    }
+  ],
+  "lastUpdated": "2026-03-13T09:40:00Z"
+}
