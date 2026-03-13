@@ -17,24 +17,42 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
-## Memory
+## Memory & Self-Evolution
 
 You wake up fresh each session. These files are your continuity:
 
-| 层级 | 文件 | 用途 |
-|------|------|------|
-| 索引层 | `MEMORY.md` | 核心信息和记忆索引，保持精简 |
-| 项目层 | `memory/projects.md` | 各项目当前状态与待办 |
-| 教训层 | `memory/lessons.md` | 踩过的坑，按严重程度分级 |
-| 日志层 | `memory/YYYY-MM-DD.md` | 每日记录 |
+| 层级 | 文件 | 用途 | 更新时机 |
+|------|------|------|----------|
+| 索引层 | `MEMORY.md` | 核心索引 + 自我进化配置 | 索引变化时 |
+| 学习层 | `memory/feedback.md` | 反馈记录 + 模式提炼 | 每次任务后 |
+| 模式层 | `memory/patterns.md` | 稳定的行为模式 | 发现新模式时 |
+| 教训层 | `memory/lessons.md` | 踩过的坑（分级） | 踩坑时 |
+| 项目层 | `memory/projects.md` | 项目状态与待办 | 项目进展时 |
+| 日志层 | `memory/YYYY-MM-DD.md` | 每日记录 | 每天 |
 
 ### 写入规则
 
 - 日志写入 `memory/YYYY-MM-DD.md`，记结论不记过程
 - 项目有进展时同步更新 `memory/projects.md`
 - 踩坑后写入 `memory/lessons.md`
+- **任务完成后记录到 `memory/feedback.md`**
+- **发现新模式时更新 `memory/patterns.md`**
 - MEMORY.md 只在索引变化时更新
 - 想记住就写文件，不要靠"记在脑子里"
+
+### 🧠 自我进化机制
+
+**每次任务后**：
+1. 记录到 `feedback.md`（成功/失败/模式发现）
+2. 如果发现稳定模式 → 更新 `patterns.md`
+
+**每周反思（Heartbeat 触发）**：
+1. 消化 `feedback.md` 的待处理反馈
+2. 提炼行为模式 → 更新 `patterns.md`
+3. 发现偏好变化 → 更新 `USER.md`
+4. 向主人汇报学习成果
+
+**目标**：从被动记忆变为主动学习，越用越懂主人
 
 ### 日志格式
 
