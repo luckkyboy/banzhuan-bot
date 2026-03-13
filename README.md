@@ -141,6 +141,7 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 - **安装数据分析支持**：pandas、openpyxl、python-pptx
 - **添加任务汇报规则**：每次完成任务后主动汇报进度
 - **添加更新日志维护规则**：提交时必须同步更新日志
+- **更新 .gitignore 规则**：只允许 memory/、.gitignore、.openclaw/、*.md 文件提交
 
 ### 2026-03-12
 - **初始化 workspace**，配置 Git 自动提交和远程推送
