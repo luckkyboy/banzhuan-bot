@@ -132,6 +132,16 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 
 ## 📝 更新日志
 
+### 2026-03-13
+- **创建 60s-news skill**：获取每日60秒新闻简报，支持指定日期查询
+- **创建 weather-60s skill**：获取实时天气和生活建议，支持指定城市查询
+- **配置联网搜索**：启用 Gemini Search
+- **配置记忆向量搜索**：使用 SiliconFlow BGE-M3 模型
+- **创建每日早报定时任务**：每天 6:45 自动推送天气和昨日工作
+- **安装数据分析支持**：pandas、openpyxl、python-pptx
+- **添加任务汇报规则**：每次完成任务后主动汇报进度
+- **添加更新日志维护规则**：提交时必须同步更新日志
+
 ### 2026-03-12
 - **初始化 workspace**，配置 Git 自动提交和远程推送
 - **添加安全规则和 .gitignore**，禁止提交敏感文件
@@ -146,5 +156,5 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 
 ---
 
-*最后更新: 2026-03-12*
+*最后更新: 2026-03-13*
 *维护者: 搬砖喵 🧱🐱*
