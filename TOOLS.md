@@ -32,9 +32,15 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - **数据**: `memory/notifications.json`
 - **功能**: 主动推送、定时提醒、优先级分级、免打扰
 
-### 📰 60秒新闻 (60s-news)
+### 📰 60 秒新闻 (60s-news)
 - **文件**: `~/.openclaw/skills/60s-news/SKILL.md`
-- **功能**: 获取每日60秒新闻简报
+- **功能**: 获取每日 60 秒新闻简报
+
+### 📰 每日新闻 (60s-news-daily)
+- **文件**: `workspace/skills/60s-news-daily/SKILL.md`
+- **API**: `https://60s.viki.moe/v2/60s?encoding=text[&date=YYYY-MM-DD]`
+- **功能**: 获取当日或指定日期的 60 秒新闻（15 条）+ 微语
+- **用途**: 回答新闻查询、日报/早报新闻数据
 
 ### 🌤️ 天气查询 (weather-60s)
 - **文件**: `~/.openclaw/skills/weather-60s/SKILL.md`
@@ -74,12 +80,12 @@ workspace/
 
 ### Python 环境
 - Python 3.10
-- 已安装: pandas, matplotlib, seaborn, openpyxl, xlsxwriter, python-docx, python-pptx, pdfplumber, PyPDF2, Pillow
+- 已安装：pandas, matplotlib, seaborn, openpyxl, xlsxwriter, python-docx, python-pptx, pdfplumber, PyPDF2, Pillow
 
 ### 时区
-- 主人时区: UTC+8
-- 系统时区: UTC
+- 主人时区：UTC+8
+- 系统时区：UTC
 
 ---
 
-*最后更新: 2026-03-13*
+*最后更新：2026-03-17*
