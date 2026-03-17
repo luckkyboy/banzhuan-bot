@@ -40,6 +40,12 @@ Skills define _how_ tools work. This file is for _your_ specifics — the stuff 
 - **文件**: `~/.openclaw/skills/weather-60s/SKILL.md`
 - **功能**: 获取实时天气和生活建议
 
+### 🌤️ 实时天气 (weather-daily)
+- **文件**: `workspace/skills/weather-daily/SKILL.md`
+- **API**: `https://60s.viki.moe/v2/weather?query={city}&encoding=json`
+- **功能**: 获取实时天气、生活建议、注意事项（雨伞/防晒/穿衣等）
+- **用途**: 回答天气查询、日报/早报天气数据
+
 ### 📝 企业微信文档 (wecom-doc)
 - **文件**: `~/.openclaw/extensions/wecom-openclaw-plugin/skills/wecom-doc/SKILL.md`
 - **功能**: 创建/编辑企业微信文档和智能表格
