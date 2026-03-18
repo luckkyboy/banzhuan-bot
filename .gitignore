@@ -24,6 +24,7 @@ Thumbs.db
 
 # 只允许以下文件类型提交：
 # - memory/ 目录
+# - skills/ 目录
 # - .gitignore
 # - .openclaw/
 # - *.md 文件
@@ -34,6 +35,7 @@ Thumbs.db
 
 # 允许的文件和目录
 !/memory/
+!/skills/
 !/.gitignore
 !/.openclaw/
 !/*.md
@@ -41,3 +43,6 @@ Thumbs.db
 
 # 允许 memory 目录内容
 !/memory/**
+
+# 允许 skills 目录内容
+!/skills/**
