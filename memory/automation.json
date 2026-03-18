@@ -1,11 +1,30 @@
 {
   "tasks": [
     {
-      "id": "daily-morning",
+      "id": "daily-report",
       "name": "每日早报",
-      "description": "每天早上推送天气和新闻",
-      "schedule": "45 6 * * *",
-      "action": "skills.weather-60s",
+      "description": "每天早上 06:40 推送天气和新闻早报",
+      "schedule": "40 6 * * *",
+      "action": "send_daily_report",
+      "params": {
+        "weather_api": "https://60s.viki.moe/v2/weather?query=双流&encoding=json",
+        "news_api": "https://60s.viki.moe/v2/60s?encoding=text&date={yesterday}",
+        "format": "早报格式规范.md"
+      },
+      "enabled": true,
+      "lastRun": null,
+      "nextRun": null
+    },
+    {
+      "id": "memory-log-update",
+      "name": "Memory 日志更新",
+      "description": "每天晚上 23:55 创建当日日志文件",
+      "schedule": "55 23 * * *",
+      "action": "create_daily_log",
+      "params": {
+        "log_path": "memory/{date}.md",
+        "git_commit": true
+      },
       "enabled": true,
       "lastRun": null,
       "nextRun": null
@@ -39,5 +58,5 @@
       "nextRun": null
     }
   ],
-  "lastUpdated": "2026-03-13T09:40:00Z"
+  "lastUpdated": "2026-03-18T00:20:00Z"
 }

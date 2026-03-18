@@ -5,5 +5,19 @@
     "weather": null
   },
   "lastMemoryMaintenance": "2026-03-13",
-  "lastSelfEvolution": "2026-03-13"
+  "lastSelfEvolution": "2026-03-13",
+  "lastDailyReport": null,
+  "lastMemoryLogUpdate": null,
+  "scheduledTasks": {
+    "dailyReport": {
+      "time": "06:40",
+      "timezone": "UTC+8",
+      "enabled": true
+    },
+    "memoryLogUpdate": {
+      "time": "23:55",
+      "timezone": "UTC+8",
+      "enabled": true
+    }
+  }
 }
