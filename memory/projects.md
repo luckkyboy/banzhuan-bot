@@ -23,10 +23,12 @@
 - [x] 创建文件格式转换 skill（file-convert）
 - [x] 创建自动化脚本 skill（automation）
 - [x] 创建通知提醒 skill（notification）
+- [x] 创建天气查询 skill（weather-daily）- 2026-03-17
+- [x] 创建每日新闻 skill（60s-news-daily）- 2026-03-17
 
 **待办**:
 - [ ] 对接日历服务
 - [ ] 对接教育资源平台
 - [ ] 实现邮件处理能力
 
-**最后更新**: 2026-03-13
+**最后更新**: 2026-03-18
