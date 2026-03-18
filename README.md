@@ -132,6 +132,12 @@ git diff --cached | grep -iE '(api[_-]?key|password|secret|token|private[_-]?key
 
 ## 📝 更新日志
 
+### 2026-03-18
+- **🕐 配置定时任务**：每日 23:55 (UTC+8) 自动更新 memory 日志，每日 06:40 (UTC+8) 自动发送早报
+- **🧠 优化自我进化频率**：记忆维护和自我进化反思调整为每两天一次
+- **📝 创建每日日志机制**：heartbeat 自动检查并创建当日 memory/YYYY-MM-DD.md 日志
+- **📦 同步技能文件**：添加 skills 目录到.gitignore 允许列表，同步所有技能到仓库
+
 ### 2026-03-13
 - **🛠️ 补齐五大核心能力**：
   - 📋 任务管理 skill（todo）- 待办增删改查、优先级、提醒
