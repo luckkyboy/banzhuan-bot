@@ -8,16 +8,20 @@
   "lastSelfEvolution": "2026-03-18",
   "lastDailyReport": null,
   "lastMemoryLogUpdate": "2026-03-18",
+  "cronJobsConfigured": true,
+  "cronJobsConfiguredAt": "2026-03-19T02:20:00+08:00",
   "scheduledTasks": {
     "dailyReport": {
       "time": "06:40",
       "timezone": "UTC+8",
-      "enabled": true
+      "enabled": true,
+      "cronJobId": "4c1bbc40-d2b6-4b4c-8f07-6d0f62dc7fd7"
     },
     "memoryLogUpdate": {
       "time": "23:55",
       "timezone": "UTC+8",
-      "enabled": true
+      "enabled": true,
+      "cronJobId": "3545a270-b1fb-4433-9364-d5e7a9607ad9"
     }
   }
 }
