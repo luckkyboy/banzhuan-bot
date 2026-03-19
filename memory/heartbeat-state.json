@@ -9,7 +9,7 @@
   "lastDailyReport": null,
   "lastMemoryLogUpdate": "2026-03-18",
   "cronJobsConfigured": true,
-  "cronJobsConfiguredAt": "2026-03-19T02:20:00+08:00",
+  "cronJobsConfiguredAt": "2026-03-19T02:33:00+08:00",
   "scheduledTasks": {
     "dailyReport": {
       "time": "06:40",
@@ -22,6 +22,20 @@
       "timezone": "UTC+8",
       "enabled": true,
       "cronJobId": "3545a270-b1fb-4433-9364-d5e7a9607ad9"
+    },
+    "memoryMaintenance": {
+      "interval": "每两天",
+      "time": "08:00",
+      "timezone": "UTC+8",
+      "enabled": true,
+      "cronJobId": "f4456e20-6809-4cda-8f32-211ede20b089"
+    },
+    "selfEvolution": {
+      "interval": "每两天",
+      "time": "08:30",
+      "timezone": "UTC+8",
+      "enabled": true,
+      "cronJobId": "bc45e367-be0a-4394-9834-c4a4d40003ce"
     }
   }
 }
