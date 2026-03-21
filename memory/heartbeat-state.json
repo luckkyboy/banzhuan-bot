@@ -9,33 +9,33 @@
   "lastDailyReport": null,
   "lastMemoryLogUpdate": "2026-03-20",
   "cronJobsConfigured": true,
-  "cronJobsConfiguredAt": "2026-03-19T02:33:00+08:00",
+  "cronJobsConfiguredAt": "2026-03-21T09:48:00+08:00",
   "scheduledTasks": {
     "dailyReport": {
       "time": "06:40",
       "timezone": "UTC+8",
       "enabled": true,
-      "cronJobId": "4c1bbc40-d2b6-4b4c-8f07-6d0f62dc7fd7"
+      "cronJobId": "f4764987-4903-4a1d-a9de-2c1bb8714c74"
     },
     "memoryLogUpdate": {
       "time": "23:55",
       "timezone": "UTC+8",
       "enabled": true,
-      "cronJobId": "3545a270-b1fb-4433-9364-d5e7a9607ad9"
+      "cronJobId": "4f8bd6b9-96fa-47d4-b4dd-60fd0078f630"
     },
     "memoryMaintenance": {
       "interval": "每两天",
       "time": "08:00",
       "timezone": "UTC+8",
       "enabled": true,
-      "cronJobId": "f4456e20-6809-4cda-8f32-211ede20b089"
+      "cronJobId": "057dcca6-48bf-4c05-a923-e5be9c9d6015"
     },
     "selfEvolution": {
       "interval": "每两天",
       "time": "08:30",
       "timezone": "UTC+8",
       "enabled": true,
-      "cronJobId": "bc45e367-be0a-4394-9834-c4a4d40003ce"
+      "cronJobId": "5d1fe34b-e575-49d2-bdc3-37f2f04759fd"
     }
   }
 }
