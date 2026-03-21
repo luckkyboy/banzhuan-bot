@@ -97,6 +97,26 @@
 - **模式**: 主人偏好系统性方案，当有多个改进选项时，倾向于"全部实施"
 - **应用**: 涉及系统改进时，主动提供完整方案
 
+### Cron 任务创建规范
+- **来源**: 2026-03-21 定时任务故障修复
+- **问题**: 创建 cron 任务时未指定 --agent 参数，导致 agent ID 为空，任务执行失败
+- **标准流程**:
+  ```bash
+  openclaw cron add \
+    --name "任务名称" \
+    --cron "表达式" \
+    --tz "Asia/Shanghai" \
+    --agent "agent:main" \
+    --session "isolated" \
+    --message "心跳消息" \
+    --description "描述"
+  ```
+- **关键参数**:
+  - `--agent "agent:main"`: 必须指定，否则 agent ID 为空
+  - `--session "isolated"`: 非 default agent 必须使用 isolated
+  - `--tz "Asia/Shanghai"`: 使用主人时区 UTC+8
+- **应用**: 创建任何定时任务时遵循此规范
+
 ---
 
 ## ❌ 失败模式库
